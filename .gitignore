@@ -9,3 +9,4 @@ test-results.xml
 # Playwright test artifacts
 test-results/
 playwright-report/
+.idea/
