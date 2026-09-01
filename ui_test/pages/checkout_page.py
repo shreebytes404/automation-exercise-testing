@@ -18,6 +18,7 @@ class CheckoutPage:
 
     def place_order(self):
         self.place_order_button.click()
+        self.page.wait_for_selector('[data-qa="name-on-card"]')
 
     def fill_payment_details(self, name="Test User", card_number="4111111111111111",
                               cvc="123", expiry_month="12", expiry_year="2027"):
