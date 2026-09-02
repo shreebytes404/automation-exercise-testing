@@ -21,8 +21,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install pytest-playwright
+          pip install pytest-playwright requests
           playwright install --with-deps
 
-      - name: Run tests
+      - name: Run UI tests
         run: pytest ui_test/tests/
+
+      - name: Run API tests
+        run: pytest api_test/test/
